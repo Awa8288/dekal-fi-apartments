@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins" sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    background-image:linear-gradient(rgba(29, 29, 29, 0.7),rgba(249, 245, 245, 0.7)),url(images/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 4%;
+    padding-right: 5%;
+    padding-top: 3%;
+    box-sizing: border-box;
+/* rgba(255, 0, 0,0.4)*/
+
+}
+.send-btn-contact{
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 20%;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(55, 124, 101);
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+    border-radius: 70%;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12;
+}
+nav ul li::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background:rgb(55, 124, 101) ;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+button{
+    text-decoration: none;
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 12;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-image:linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.7)),url(images/background.jpeg);
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+button:hover{
+    background: rgb(55, 124, 101); ;
+}
+
+.text{
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10%;
+    color: white;
+}
+.text h1,.text p{
+    padding-bottom: 5px;
+}
+.form-cover{
+    display: block;
+    margin-left: 300px;
+    margin-top: 40px;
+    width:40%;
+    padding: 25px 45px;
+    color: white;
+}
+.form-cover .form-group{
+    margin-top: 20px;
+}
+.form-cover .form-group label{
+    display: block;
+}
+.form-cover .form-group input{
+    width: 94.8%;
+    padding: 15px 15px;
+    border-color: rgb(55, 124, 101);
+    border-radius: 5px;
+    background: white;
+    margin: 2%;
+}
+select{
+    width: 100%;
+    padding: 15px 15px;
+    border-color: rgb(55, 124, 101);
+    border-radius: 5px;
+    background: white;
+    margin: 2%;
+}
+option{
+    background: white;
+}
+#form{
+    margin-top: 8%;
+}
+.signUp-btn{
+    color: white;
+}
+.send-btn{
+    float:left ;
+    color: white;
+    width: 120px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0,0.7)),url(images/background.jpeg);
+    font-weight: 600px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    }
+#l{ 
+    margin-left:90px ;
+}  
+.send-btn:hover{
+    background: rgb(55, 124, 101);;
+}
+.arrange{
+    margin-left: 20px;
+    display: flex;
+} 
+
+.form-cover .b{ 
+    float: right;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: rgb(55, 124, 101);
+}
+.form-cover .b:hover{
+    background:rgb(55, 124, 101);
+}
+.contact-container{
+    width: 100%;
+    height: auto;
+    background-image:linear-gradient(rgba(29, 29, 29, 0.7),rgba(249, 245, 245, 0.7)),url(images/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 3%;
+    box-sizing: border-box;
+}
+.contact-form{
+    margin-top: 40px;
+}
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.contact-info{
+    color: white;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+    margin-top: 65px;
+}
+.contact-info i{
+    max-width: 700px;
+    margin-right: 10px;
+    color: rgb(55, 124, 101); 
+}
+.hand-shake i{
+    margin-top: 5%;
+    margin-right: 10px;
+    color: rgb(55, 124, 101); 
+    font-size: 100px;
+}
+.thank-you{
+    margin-top: 10%;
+}
+.contact-info, .contact-form{
+    flex: 1;
+}
+.contact-header{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.contact-form .text-box{
+    background: white;
+    color: black;
+    width: 67.5%;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+.contact-form textarea{
+    background: white;
+    color: black;
+    border: none;
+    width: 67.5%;
+    padding: 12px;
+    font-size: 15px;
+    max-height: 400px;
+    min-height: 200px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    color: white;
+    margin-top: 100px;
+    padding-inline: 20px;
+}
+.about-info{
+    max-width: 500px;
+    line-height: 30px;
+    margin-left: 40px;
+    font-size: 20px;
+    text-align: left;
+}
+.about-info h1{
+    padding-bottom: 30px;
+}
+.deco{
+    color: rgb(17, 34, 29); 
+}
+.photo{
+    max-width: 300px;
+    font-size: 25px;
+    margin-left: 150px;
+    text-align: left;
+    
+}
+img{
+    width: 400px;
+}
+.signup-container {
+    
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(14, 12, 12, 0.2);
+    max-width: 100;
+    margin-top:10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2;
+    font-family: arial;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    height: auto;
+}
+.cards{
+    margin-right: 150px;
+}
+
+.price {
+    color:rgb(55, 124, 101);
+    font-size: 22px;
+}
+#detail{
+    margin-left: 20px;
+}
+
+.detail-info{
+    margin-left: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+    justify-content: start;
+    color: white;
+}
+.detail-info h1, p{
+    padding-bottom: 30px;
+}
+#middle{
+    margin-left: 180px;
+}
+.grid-container {
+    background: white;
+    width: 100%;
+    justify-content: center;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 70px;
+    height: auto;
+    padding: 20px;
+}
+.main{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.main img{
+    height: 100%;
+}
+.insider {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.sub {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px ;
+}
+.sub img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.btn-container {
+    justify-self: center;
+    margin-left: 30%;
+}
+
+img{
+    width: 500px;
+    height: 300px;
+}
+.navbar img{
+    width: 70px;
+    height: 70px;
+}
+.creditCard{
+    box-shadow: 0 4px 8px 0 rgba(14, 12, 12, 0.2);
+    max-width: 50;
+    margin-right: 20%;
+    /* display: flex; */
+    align-items: center;
+    font-family: arial;
+    text-align: center;
+    color: white;
+    /* padding: 30px; */
+    height: 500px;
+}
+.creditCard h3{
+    color: black;
+}
+.Banklogo {
+    width: 90px;
+    height: 100px;
+    cursor: pointer;
+    border-radius:2px ;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.inc {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    border-radius:2px ;
+    margin-left: 15px;
+    
+    margin-top: 20px;
+}
+#b{
+    font-size: 80px; 
+}
+#b span{
+    color: rgb(14, 146, 198);
+}
+#t{
+    font-size: 80px; 
+}
+#t span{
+    color:rgb(240, 206, 94);
+}
+
+#GT{
+    font-size: 80px;
+    
+}
+#GT span{
+    color: #ff5415;
+}
+
+.transfer{
+   float: left;
+   margin-top: 30px;
+   color: white;
+}
+.transfer p{
+    margin-left: 30px;
+    font-size: 18px;
+}
